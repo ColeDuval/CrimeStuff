@@ -53,9 +53,9 @@ with st.sidebar:
 labelist = listmaker(pog,x,y,'l')  # make a list of the labels
 sizelist = listmaker(pog,x,y,'s')  # make a list of the counts
 
-fig = figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
+fig = st.pyplot.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
 ax1 = fig.add_axes([0.1,0.1,.8,0.8])
-ax1 = st.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
+ax1 = st.pyplot.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
         shadow=True, startangle=90)  # makes a pie chart
 st.title("Crimes committed within a range of Time:")
 st.header("Pie Chart:")
