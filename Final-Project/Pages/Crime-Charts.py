@@ -2,11 +2,7 @@ import streamlit as st
 import pandas as pd
 import csv as csv
 import numpy as np
-from matplotlib.backends.backend_agg import RendererAgg
-_lock = RendererAgg.lock
-with _lock:
-
-    st.set_page_config(
+ st.set_page_config(
         page_title="Crime Charts",
         page_icon="Final-Project/Icons/blobfish.png",
     )
@@ -57,7 +53,7 @@ with _lock:
     labelist = listmaker(pog,x,y,'l')  # make a list of the labels
     sizelist = listmaker(pog,x,y,'s')  # make a list of the counts
 
-    fig = st.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
+    fig = figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
     ax1 = fig.add_axes([0.1,0.1,.8,0.8])
     ax1 = st.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
             shadow=True, startangle=90)  # makes a pie chart
