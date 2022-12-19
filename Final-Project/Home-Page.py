@@ -36,3 +36,16 @@ st.write('the purpose of this website is to use and analyze Boston police crime 
 st.subheader('A Little Bit About Me') # Prints a header
 st.write('My name is Cole Duval Im currently 21 years old and I currently go to Bentley  university studying to get my undergraduate in computer information systems. I am on the cross country team at Bentley and Im also in several clubs I love getting outside and being active and my favorite activities include running coding and playing the guitar. ')
 st.image('Final-Project/Icons/IMG_9903.jpg', caption='a picture of me',width=200) # shows an image of me
+tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+
+with tab1:
+   st.header("A cat")
+   st.image("https://coleduval-crimestuff-final-projectpagespivot-table-llxeb1.streamlit.app/", width=200)
+
+with tab2:
+   st.header("A dog")
+   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
+
+with tab3:
+   st.header("An owl")
+   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
