@@ -26,6 +26,9 @@ pagestyle = '''
     }
     </style>
     '''
+def main_page():
+    st.markdown("# Main page 🎈")
+    st.sidebar.markdown("# Main page 🎈")
 st.markdown(pagestyle, unsafe_allow_html=True)
 list = []
 file = open(r'Final-Project/Pages/BostonCrime2021_7000_sample.csv')
