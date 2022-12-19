@@ -28,8 +28,8 @@ background-color: #FFB2B2;
 </style>
 '''
 st.markdown(pagestyle, unsafe_allow_html=True)
-file = open(r'C:\Users\Cole\PycharmProjects\pythonProject\Final-Project\BostonCrime2021_7000_sample.csv')  # Opens crime data file
-namefile = open(r'C:\Users\Cole\PycharmProjects\pythonProject\Final-Project\Pages\BostonPoliceDistricts.csv')  # Opens District name File
+file = open(r'Final-Project/Pages/BostonCrime2021_7000_sample.csv')  # Opens crime data file
+namefile = open(r'Final-Project/Pages/BostonPoliceDistricts.csv')  # Opens District name File
 frame = pd.read_csv(file)  # Reads the Crime File
 namelist = []  # Makes a name list
 namedic = {}  # Makes a name dictionary
