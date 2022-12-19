@@ -40,7 +40,7 @@ tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
 with tab1:
    st.header("A cat")
-   st.image("https://coleduval-crimestuff-final-projectpagespivot-table-llxeb1.streamlit.app/", width=200)
+   st.write("https://coleduval-crimestuff-final-projectpagespivot-table-llxeb1.streamlit.app/")
 
 with tab2:
    st.header("A dog")
