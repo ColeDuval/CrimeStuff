@@ -30,24 +30,6 @@ background-color: #FFB2B2;
 </style>
 '''
 
-def main_page():
-    st.markdown("# Main page 🎈")
-    st.sidebar.markdown("# Main page 🎈")
-
-def page2():
-    st.markdown("# Page 2 ❄️")
-    st.sidebar.markdown("# Page 2 ❄️")
-
-def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
-
-page_names_to_funcs = {
-    "Main Page": main_page,
-    "Page 2": page2,
-    "Page 3": page3,
-}
-
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 st.markdown(pagestyle, unsafe_allow_html=True)  # Sets The overall styling for the website by injecting CSS
@@ -57,16 +39,3 @@ st.write('the purpose of this website is to use and analyze Boston police crime 
 st.subheader('A Little Bit About Me') # Prints a header
 st.write('My name is Cole Duval Im currently 21 years old and I currently go to Bentley  university studying to get my undergraduate in computer information systems. I am on the cross country team at Bentley and Im also in several clubs I love getting outside and being active and my favorite activities include running coding and playing the guitar. ')
 st.image('Final-Project/Icons/IMG_9903.jpg', caption='a picture of me',width=200) # shows an image of me
-tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
-
-with tab1:
-   st.header("A cat")
-   st.write("https://coleduval-crimestuff-final-projectpagespivot-table-llxeb1.streamlit.app/")
-
-with tab2:
-   st.header("A dog")
-   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-
-with tab3:
-   st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
