@@ -29,8 +29,8 @@ background-color: #FFB2B2;
 </style>
 '''
 st.markdown(pagestyle, unsafe_allow_html=True)  # Sets the styling of the page
-file = open(r'C:\Users\Cole\PycharmProjects\pythonProject\Final-Project\BostonCrime2021_7000_sample.csv')
-namefile = open(r'C:\Users\Cole\PycharmProjects\pythonProject\Final-Project\Pages\BostonPoliceDistricts.csv')
+file = open(r'Final-Project\BostonCrime2021_7000_sample.csv')
+namefile = open(r'Final-Project\Pages\BostonPoliceDistricts.csv')
 frame = pd.read_csv(file)  # Opens the crime data
 nameframe = pd.read_csv(namefile)  # Opens the name data
 crimetypes = []
