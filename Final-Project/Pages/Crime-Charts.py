@@ -29,7 +29,7 @@ background-color: #FFB2B2;
 '''
 st.markdown(pagestyle, unsafe_allow_html=True)
 list = []
-file = open(r'Final-Project\BostonCrime2021_7000_sample.csv')
+file = open(r'Final-Project/Pages/BostonCrime2021_7000_sample.csv')
 frame = pd.read_csv(file)
 def time(frame,x, y):  # defines the time functoin
     frame.sort_values('HOUR',ascending=True)
