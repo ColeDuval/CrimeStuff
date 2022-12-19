@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import csv as csv
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 st.set_page_config(
@@ -56,25 +55,25 @@ with st.sidebar:
 labelist = listmaker(pog,x,y,'l')  # make a list of the labels
 sizelist = listmaker(pog,x,y,'s')  # make a list of the counts
 
-fig = plt.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
+fig = st.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
 ax1 = fig.add_axes([0.1,0.1,.8,0.8])
-ax1 = plt.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
+ax1 = st.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
         shadow=True, startangle=90)  # makes a pie chart
 st.title("Crimes committed within a range of Time:")
 st.header("Pie Chart:")
 st.pyplot(fig)  # plots the pie chart
-fig1 = plt.figure(figsize=(15,8),linewidth=10,edgecolor="#31333F",facecolor="#ffe2e2")
+fig1 = st.figure(figsize=(15,8),linewidth=10,edgecolor="#31333F",facecolor="#ffe2e2")
 ax1 = fig1.add_axes([0.1,0.1,.8,0.8])
 x = np.arange(len(labelist))
-plt.xticks(x, labelist)
+st.xticks(x, labelist)
 st.subheader('What does this chart show?')
 st.write('This pie chart represents the percent of total crimes each hour accounts for within the range of hours selected by the user.')
 st.subheader('Possible Uses?')
 st.write('Through this pie chart, we are able to see which hours of the day have the most crimes committed within them this piece of information is very insightful especially for law enforcement agencies because it helps them meet the demand for officers during hours that have the highest the number of crimes being committed')
 st.header("Bar Chart:")
-ax2 = plt.bar(height=sizelist,x = labelist)  # makes a bar chart
-plt.xlabel("Time of Day")
-plt.ylabel("Number of Crimes")
+ax2 = st.bar(height=sizelist,x = labelist)  # makes a bar chart
+st.xlabel("Time of Day")
+st.ylabel("Number of Crimes")
 st.pyplot(fig1)  # plots a bar chart
 x = 0
 agsize = []
