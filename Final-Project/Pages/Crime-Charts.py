@@ -6,7 +6,7 @@ st.set_page_config(
         page_title="Crime Charts",
         page_icon="Final-Project/Icons/blobfish.png",
     )
-    pagestyle = '''
+pagestyle = '''
     <style>
     [data-testid="stAppViewContainer"] {
     background-color: #ffffff;
