@@ -28,7 +28,7 @@ pagestyle = '''
     '''
 st.markdown(pagestyle, unsafe_allow_html=True)
 list = []
-file = open(r'Final-Project/Pages/BostonCrime2021_7000_sample.csv')
+file = open(r'Final-Project\BostonCrime2021_7000_sample.csv')
 frame = pd.read_csv(file)
 def time(frame,x, y):  # defines the time functoin
     frame.sort_values('HOUR',ascending=True)
@@ -54,9 +54,9 @@ with st.sidebar:
 labelist = listmaker(pog,x,y,'l')  # make a list of the labels
 sizelist = listmaker(pog,x,y,'s')  # make a list of the counts
 
-fig = st.pyplot.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
+fig = plt.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#ffe2e2")
 ax1 = fig.add_axes([0.1,0.1,.8,0.8])
-ax1 = st.pyplot.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
+ax1 = plt.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
         shadow=True, startangle=90)  # makes a pie chart
 st.title("Crimes committed within a range of Time:")
 st.header("Pie Chart:")
@@ -103,4 +103,3 @@ st.subheader('What does this chart show?')
 st.write('This line plot shows two different lines the line in red represents the total aggregated number of crimes for each hour of the range specified by the end user the second line in green represents the average total crimes committed within the range specified by the user.')
 st.subheader('Possible Uses?')
 st.write('By looking at the total crimes line we can see the rate at which the total number of crimes Is changing the steeper the slope the higher change in the number of crimes per hour. Furthermore we can see that on average the average number of total crimes is increasing due to the fact that the total amount of crime is increasing which causes the total average crimes per hour to increase as well.')
-
