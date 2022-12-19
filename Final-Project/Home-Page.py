@@ -29,9 +29,6 @@ background-color: #FFB2B2;
 }
 </style>
 '''
-
-selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
 st.markdown(pagestyle, unsafe_allow_html=True)  # Sets The overall styling for the website by injecting CSS
 st.title('Welcome to My Website!')  # Prints a title
 st.subheader('What is the purpose of this website?')  # Prints a header
