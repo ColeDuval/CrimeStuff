@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 import csv as csv
 import numpy as np
-import matplotlib as mp
-from matplotlib import pyplot as plt
+import pyplot as plt
 
 
 st.set_page_config(
