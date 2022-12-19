@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import csv as csv
 import numpy as np
-pip install matplotlib
 import matplotlib.pyplot as plt
 
 
