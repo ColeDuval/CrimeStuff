@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import csv as csv
 import numpy as np
- st.set_page_config(
+st.set_page_config(
         page_title="Crime Charts",
         page_icon="Final-Project/Icons/blobfish.png",
     )
