@@ -97,7 +97,7 @@ st.write('Again much like the pie chart the bar chart shows which hours of the d
 st.subheader("Line Chart:")
 plt.xlabel("Time of Day")
 plt.ylabel("Number of Crimes")
-plt.legend(labels = ['Total Crimes', 'Total Avrage Crimes'])
+plt.legend(labels = ['Total Crimes', 'Total Average Crimes'])
 st.pyplot(fig2)  # graghs the lines
 st.subheader('What does this chart show?')
 st.write('This line plot shows two different lines the line in red represents the total aggregated number of crimes for each hour of the range specified by the end user the second line in green represents the average total crimes committed within the range specified by the user.')
