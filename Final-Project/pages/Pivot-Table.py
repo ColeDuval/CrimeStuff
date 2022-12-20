@@ -83,7 +83,7 @@ if len(options1) != 0 and len(options) != 0:
     plt.legend(labels = options1, loc = 'upper right')
     st.header('Pivot Table Graph:')
     st.pyplot(fig2)  # plots the graph
-    st.subheader('what does this graph show?')
+    st.subheader('What does this graph show?')
     st.write('This graph created by using a pivot table maps the total number of crimes per month for each district giving the user the option to pick what crimes they want to see as well as what districts they would like to see')
     piv2 = (np.round(pd.pivot_table(crimeinbostoncomplex, values='INCIDENT_NUMBER',
                                     index=['MONTH'],
