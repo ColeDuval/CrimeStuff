@@ -91,7 +91,7 @@ if len(options1) != 0 and len(options) != 0:
                                     aggfunc='count', fill_value=0),2))
     st.header('Pivot Table:')
     st.write(piv2)
-    st.subheader('what does this pivot table show?')
+    st.subheader('What does this pivot table show?')
     st.write('the graph above is created using the data within this pivot table, which itself can be manipulated by the user depending on the inputs that they decide to select.')
 else:
     st.write('please input values')
