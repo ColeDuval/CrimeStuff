@@ -58,7 +58,7 @@ fig = plt.figure(figsize=(12,12),linewidth=10, edgecolor="#31333F",facecolor="#f
 ax1 = fig.add_axes([0.1,0.1,.8,0.8])
 ax1 = plt.pie(sizelist,  labels=labelist, autopct='%1.1f%%',
         shadow=True, startangle=90)  # makes a pie chart
-st.title("Crimes committed within a six month time period in boston")
+st.title("Crimes committed within a six month time period in Boston")
 st.header("Pie Chart:")
 st.pyplot(fig)  # plots the pie chart
 fig1 = plt.figure(figsize=(15,8),linewidth=10,edgecolor="#31333F",facecolor="#ffe2e2")
