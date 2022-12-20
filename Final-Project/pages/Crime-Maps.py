@@ -69,7 +69,7 @@ with st.sidebar: # create a sidebar that has a select box that depending on what
     if options3 == 'Type':
         options = st.multiselect('What are the Crimes you want to see',crimetypes)
     elif options3 == 'District':
-        options1 = st.multiselect('Where Crimes you want to see',district)
+        options1 = st.multiselect('Where are Crimes you want to see',district)
     else:
         options1 = st.multiselect('Where Crimes you want to see',district)
         options = st.multiselect('What are the Crimes you want to see',crimetypes)
