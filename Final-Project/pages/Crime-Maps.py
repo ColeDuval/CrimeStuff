@@ -64,7 +64,7 @@ for i in frame.District_Name:
         district.append(i)
 with st.sidebar: # create a sidebar that has a select box that depending on what is selected will show different types of criteria which will be used to sort the data which will then be shown in the maps
     options3 = st.selectbox(
-    'How would you like to be contacted?',
+    'How would like to sort the data?',
     ('Type', 'District', 'Type and District'))
     if options3 == 'Type':
         options = st.multiselect('What are the Crimes you want to see',crimetypes)
