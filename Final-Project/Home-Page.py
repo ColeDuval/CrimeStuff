@@ -32,7 +32,7 @@ background-color: #FFB2B2;
 st.markdown(pagestyle, unsafe_allow_html=True)  # Sets The overall styling for the website by injecting CSS
 st.title('Welcome to the website!')  # Prints a title
 st.subheader('What is the purpose of this website?')  # Prints a header
-st.write('the purpose of this website is to use Boston police crime data and display it to the end user of this website in a interactive fashion, to this end add this website consists of three different pages each with its own unique function and way to interact with the data.')
+st.write('The purpose of this website is to use Boston police crime data and display it to the end user of this website in an interactive fashion. This website consists of three different pages, each with its own unique function and way to interact with the data.')
 st.subheader('A Little Bit About Me') # Prints a header
-st.write('My name is Cole Duval Im currently 21 years old and I currently go to Bentley  university studying to get my undergraduate in computer information systems. I am on the cross country team at Bentley and Im also in several clubs I love getting outside and being active and my favorite activities include running coding and playing the guitar. ')
+st.write('My name is Cole Duval. I am currently 21 years old and attend Bentley University. I am  studying to get my undergraduate degree in Computer Information Systems. I am on the cross-country team at Bentley. I am in several clubs/  I love being outside and being active.  My favorite activities include running, coding, and playing the guitar.')
 st.image('Final-Project/Icons/IMG_9903.jpg', caption='a picture of me',width=200) # shows an image of me
