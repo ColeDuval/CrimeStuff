@@ -140,7 +140,7 @@ if options3 == 'Type': # if the user selects type
                 tooltip = tool_tip
                         )
     st.subheader('What does this map show?')
-    st.write('This map shows which areas have the highest frequency of crimes by not only plotting 2D dots but also plotting 3D figures depending on the frequency of crimes within that specific area.')
+    st.write('This map shows which areas have the highest frequency of crimes.  The user can manipulate this data by making choices about what data they would like to view. The user’s choices are reflected by the map having 2D dots plotted but also having 3D figures plotted depending on the frequency of crimes within that specific area.')
     st.header('Sorted Map')
     st.pydeck_chart(map) #prints the map to streamlit
     st.subheader('What does this map show?')
@@ -209,7 +209,7 @@ if options3 == "District":
             tooltip = tool_tip
                     )
     st.subheader('What does this map show?')
-    st.write('This map shows which areas have the highest frequency of crimes by not only plotting 2D dots but also plotting 3D figures depending on the frequency of crimes within that specific area.')
+    st.write('This map shows which areas have the highest frequency of crimes.  The user can manipulate this data by making choices about what data they would like to view. The user’s choices are reflected by the map having 2D dots plotted but also having 3D figures plotted depending on the frequency of crimes within that specific area.')
     st.header('Sorted Map')
     st.pydeck_chart(map)
     st.subheader('What does this map show?')
@@ -279,7 +279,7 @@ elif options3 == "Type and District":
             tooltip = tool_tip
                     )
     st.subheader('What does this map show?')
-    st.write('This map shows which areas have the highest frequency of crimes by not only plotting 2D dots but also plotting 3D figures depending on the frequency of crimes within that specific area.')
+    st.write('This map shows which areas have the highest frequency of crimes.  The user can manipulate this data by making choices about what data they would like to view. The user’s choices are reflected by the map having 2D dots plotted but also having 3D figures plotted depending on the frequency of crimes within that specific area.')
     st.header('Sorted Map')
     st.pydeck_chart(map)
     st.subheader('What does this map show?')
